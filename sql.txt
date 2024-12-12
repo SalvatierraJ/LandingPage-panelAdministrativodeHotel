@@ -1,0 +1,119 @@
+drop database hotel_tuyuyu;
+-- Crear la base de datos
+CREATE DATABASE hotel_tuyuyu;
+
+-- Usar la base de datos
+USE hotel_tuyuyu;
+
+-- Creación de la tabla Usuarios
+CREATE TABLE Usuarios (
+  id_usuario INT PRIMARY KEY AUTO_INCREMENT,
+  nombre VARCHAR(50),
+  apellido_paterno VARCHAR(50),
+  apellido_materno VARCHAR(50),
+  telefono VARCHAR(20),
+  ci VARCHAR(20),
+  pasaporte VARCHAR(20),
+  correo_electronico VARCHAR(50),
+  rol VARCHAR(20),
+  nombre_usuario VARCHAR(50),
+  contrasena VARCHAR(50)
+);
+
+-- Creación de la tabla Cliente con herencia de Usuarios
+CREATE TABLE Cliente (
+  id_cliente INT PRIMARY KEY,
+  FOREIGN KEY (id_cliente) REFERENCES Usuarios(id_usuario)
+);
+
+-- Creación de la tabla Personal con herencia de Usuarios
+CREATE TABLE Personal (
+  id_personal INT PRIMARY KEY,
+  FOREIGN KEY (id_personal) REFERENCES Usuarios(id_usuario)
+);
+
+
+-- Creación de la tabla Hotel
+CREATE TABLE Hotel (
+  id_hotel INT PRIMARY KEY AUTO_INCREMENT,
+  nombre VARCHAR(50),
+  ubicacion VARCHAR(50),
+  numero_habitaciones INT,
+  servicios VARCHAR(100)
+);
+
+-- Creación de la tabla Habitacion
+CREATE TABLE Habitacion (
+  id_habitacion INT PRIMARY KEY AUTO_INCREMENT,
+  id_hotel INT,
+  tipo_habitacion VARCHAR(20),
+  capacidad INT,
+  precio_noche DECIMAL(10, 2),
+  FOREIGN KEY (id_hotel) REFERENCES Hotel(id_hotel)
+);
+
+-- Creación de la tabla Promocion
+CREATE TABLE Promocion (
+  id_promocion INT PRIMARY KEY AUTO_INCREMENT,
+  nombre VARCHAR(50),
+  descripcion VARCHAR(100),
+  descuento DECIMAL(5, 2)
+);
+
+
+-- Creación de la tabla Servicio_Adicional
+CREATE TABLE Servicio_Adicional (
+  id_servicio INT PRIMARY KEY AUTO_INCREMENT,
+  nombre VARCHAR(50),
+  descripcion VARCHAR(100),
+  precio DECIMAL(10, 2)
+);
+
+
+
+-- Creación de la tabla Reserva
+CREATE TABLE Reserva (
+  id_reserva INT PRIMARY KEY AUTO_INCREMENT,
+  id_cliente INT,
+  id_hotel INT,
+  id_habitacion INT,
+  id_personal INT,
+  fecha_entrada DATE,
+  fecha_salida DATE,
+  estado VARCHAR(20),
+  FOREIGN KEY (id_cliente) REFERENCES Cliente(id_cliente),
+  FOREIGN KEY (id_hotel) REFERENCES Hotel(id_hotel),
+  FOREIGN KEY (id_habitacion) REFERENCES Habitacion(id_habitacion),
+  FOREIGN KEY (id_personal) REFERENCES Personal(id_personal)
+);
+
+
+-- Creación de la tabla Reserva_Promocion (tabla de relación entre Reserva y Promocion)
+CREATE TABLE Reserva_Promocion (
+  id_reserva INT,
+  id_promocion INT,
+  PRIMARY KEY (id_reserva, id_promocion),
+  FOREIGN KEY (id_reserva) REFERENCES Reserva(id_reserva),
+  FOREIGN KEY (id_promocion) REFERENCES Promocion(id_promocion)
+);
+
+
+-- Creación de la tabla Reserva_Servicio (tabla de relación entre Reserva y Servicio_Adicional)
+CREATE TABLE Reserva_Servicio (
+  id_reserva INT,
+  id_servicio INT,
+  PRIMARY KEY (id_reserva, id_servicio),
+  FOREIGN KEY (id_reserva) REFERENCES Reserva(id_reserva),
+  FOREIGN KEY (id_servicio) REFERENCES Servicio_Adicional(id_servicio)
+);
+
+-- Creación de la tabla Pago
+CREATE TABLE Pago (
+  id_pago INT PRIMARY KEY AUTO_INCREMENT,
+  id_reserva INT,
+  id_cliente INT,
+  costo_total DECIMAL(10, 2),
+  fecha_pago DATE,
+  FOREIGN KEY (id_reserva) REFERENCES Reserva(id_reserva),
+  FOREIGN KEY (id_cliente) REFERENCES Cliente(id_cliente)
+);

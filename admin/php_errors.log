@@ -1,0 +1,75 @@
+[19-Sep-2023 13:05:14 UTC] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in C:\wamp64\www\SoftWare\admin\phpAdmin\conexion_be.php:64
+Stack trace:
+#0 C:\wamp64\www\SoftWare\admin\phpAdmin\conexion_be.php(64): mysqli_stmt_bind_param(Object(mysqli_stmt), 'ii', '10')
+#1 C:\wamp64\www\SoftWare\admin\mensajes_usuarios.php(21): update('UPDATE `user_co...', Array, 'ii')
+#2 {main}
+  thrown in C:\wamp64\www\SoftWare\admin\phpAdmin\conexion_be.php on line 64
+[19-Sep-2023 13:05:15 UTC] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in C:\wamp64\www\SoftWare\admin\phpAdmin\conexion_be.php:64
+Stack trace:
+#0 C:\wamp64\www\SoftWare\admin\phpAdmin\conexion_be.php(64): mysqli_stmt_bind_param(Object(mysqli_stmt), 'ii', '10')
+#1 C:\wamp64\www\SoftWare\admin\mensajes_usuarios.php(21): update('UPDATE `user_co...', Array, 'ii')
+#2 {main}
+  thrown in C:\wamp64\www\SoftWare\admin\phpAdmin\conexion_be.php on line 64
+[19-Sep-2023 13:05:15 UTC] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in C:\wamp64\www\SoftWare\admin\phpAdmin\conexion_be.php:64
+Stack trace:
+#0 C:\wamp64\www\SoftWare\admin\phpAdmin\conexion_be.php(64): mysqli_stmt_bind_param(Object(mysqli_stmt), 'ii', '10')
+#1 C:\wamp64\www\SoftWare\admin\mensajes_usuarios.php(21): update('UPDATE `user_co...', Array, 'ii')
+#2 {main}
+  thrown in C:\wamp64\www\SoftWare\admin\phpAdmin\conexion_be.php on line 64
+[19-Sep-2023 13:05:16 UTC] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in C:\wamp64\www\SoftWare\admin\phpAdmin\conexion_be.php:64
+Stack trace:
+#0 C:\wamp64\www\SoftWare\admin\phpAdmin\conexion_be.php(64): mysqli_stmt_bind_param(Object(mysqli_stmt), 'ii', '10')
+#1 C:\wamp64\www\SoftWare\admin\mensajes_usuarios.php(21): update('UPDATE `user_co...', Array, 'ii')
+#2 {main}
+  thrown in C:\wamp64\www\SoftWare\admin\phpAdmin\conexion_be.php on line 64
+[19-Sep-2023 13:05:16 UTC] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in C:\wamp64\www\SoftWare\admin\phpAdmin\conexion_be.php:64
+Stack trace:
+#0 C:\wamp64\www\SoftWare\admin\phpAdmin\conexion_be.php(64): mysqli_stmt_bind_param(Object(mysqli_stmt), 'ii', '10')
+#1 C:\wamp64\www\SoftWare\admin\mensajes_usuarios.php(21): update('UPDATE `user_co...', Array, 'ii')
+#2 {main}
+  thrown in C:\wamp64\www\SoftWare\admin\phpAdmin\conexion_be.php on line 64
+[19-Sep-2023 13:05:27 UTC] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in C:\wamp64\www\SoftWare\admin\phpAdmin\conexion_be.php:64
+Stack trace:
+#0 C:\wamp64\www\SoftWare\admin\phpAdmin\conexion_be.php(64): mysqli_stmt_bind_param(Object(mysqli_stmt), 'ii', '10')
+#1 C:\wamp64\www\SoftWare\admin\mensajes_usuarios.php(21): update('UPDATE `user_co...', Array, 'ii')
+#2 {main}
+  thrown in C:\wamp64\www\SoftWare\admin\phpAdmin\conexion_be.php on line 64
+[19-Sep-2023 13:05:29 UTC] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in C:\wamp64\www\SoftWare\admin\phpAdmin\conexion_be.php:64
+Stack trace:
+#0 C:\wamp64\www\SoftWare\admin\phpAdmin\conexion_be.php(64): mysqli_stmt_bind_param(Object(mysqli_stmt), 'ii', '20')
+#1 C:\wamp64\www\SoftWare\admin\mensajes_usuarios.php(21): update('UPDATE `user_co...', Array, 'ii')
+#2 {main}
+  thrown in C:\wamp64\www\SoftWare\admin\phpAdmin\conexion_be.php on line 64
+[19-Sep-2023 13:05:30 UTC] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in C:\wamp64\www\SoftWare\admin\phpAdmin\conexion_be.php:64
+Stack trace:
+#0 C:\wamp64\www\SoftWare\admin\phpAdmin\conexion_be.php(64): mysqli_stmt_bind_param(Object(mysqli_stmt), 'ii', '24')
+#1 C:\wamp64\www\SoftWare\admin\mensajes_usuarios.php(21): update('UPDATE `user_co...', Array, 'ii')
+#2 {main}
+  thrown in C:\wamp64\www\SoftWare\admin\phpAdmin\conexion_be.php on line 64
+[19-Sep-2023 13:05:30 UTC] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in C:\wamp64\www\SoftWare\admin\phpAdmin\conexion_be.php:64
+Stack trace:
+#0 C:\wamp64\www\SoftWare\admin\phpAdmin\conexion_be.php(64): mysqli_stmt_bind_param(Object(mysqli_stmt), 'ii', '25')
+#1 C:\wamp64\www\SoftWare\admin\mensajes_usuarios.php(21): update('UPDATE `user_co...', Array, 'ii')
+#2 {main}
+  thrown in C:\wamp64\www\SoftWare\admin\phpAdmin\conexion_be.php on line 64
+[19-Sep-2023 13:09:30 UTC] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in C:\wamp64\www\SoftWare\admin\phpAdmin\conexion_be.php:64
+Stack trace:
+#0 C:\wamp64\www\SoftWare\admin\phpAdmin\conexion_be.php(64): mysqli_stmt_bind_param(Object(mysqli_stmt), 'ii', '25')
+#1 C:\wamp64\www\SoftWare\admin\mensajes_usuarios.php(21): update('UPDATE `user_co...', Array, 'ii')
+#2 {main}
+  thrown in C:\wamp64\www\SoftWare\admin\phpAdmin\conexion_be.php on line 64
+[19-Sep-2023 13:38:44 UTC] PHP Fatal error:  Uncaught ArgumentCountError: The number of variables must match the number of parameters in the prepared statement in C:\wamp64\www\SoftWare\admin\phpAdmin\conexion_be.php:64
+Stack trace:
+#0 C:\wamp64\www\SoftWare\admin\phpAdmin\conexion_be.php(64): mysqli_stmt_bind_param(Object(mysqli_stmt), 'ii', 1, 'all')
+#1 C:\wamp64\www\SoftWare\admin\mensajes_usuarios.php(19): update('UPDATE user_con...', Array, 'ii')
+#2 {main}
+  thrown in C:\wamp64\www\SoftWare\admin\phpAdmin\conexion_be.php on line 64
+[19-Sep-2023 23:30:51 UTC] PHP Warning:  Undefined array key "name" in C:\wamp64\www\SoftWare\admin\habitaciones.php on line 125
+[19-Sep-2023 23:30:51 UTC] PHP Stack trace:
+[19-Sep-2023 23:30:51 UTC] PHP   1. {main}() C:\wamp64\www\SoftWare\admin\habitaciones.php:0
+[19-Sep-2023 23:31:00 UTC] PHP Warning:  Undefined array key "name" in C:\wamp64\www\SoftWare\admin\habitaciones.php on line 125
+[19-Sep-2023 23:31:00 UTC] PHP Stack trace:
+[19-Sep-2023 23:31:00 UTC] PHP   1. {main}() C:\wamp64\www\SoftWare\admin\habitaciones.php:0
+[19-Sep-2023 23:32:42 UTC] PHP Warning:  Undefined array key "name" in C:\wamp64\www\SoftWare\admin\habitaciones.php on line 125
+[19-Sep-2023 23:32:42 UTC] PHP Stack trace:
+[19-Sep-2023 23:32:42 UTC] PHP   1. {main}() C:\wamp64\www\SoftWare\admin\habitaciones.php:0
